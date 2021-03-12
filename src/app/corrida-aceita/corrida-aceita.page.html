@@ -1,0 +1,49 @@
+<ion-content>
+  <div class="header">
+    <ion-icon  [routerLink]="['../products']" class="back" name="chevron-back-outline"></ion-icon>
+    <img class="logo" src="../../assets/logo-preto.png">
+    <ion-menu-button class="menu"></ion-menu-button>
+  </div>
+
+  <div class="container-map">
+    <img class="map" src="../../assets/map-home.png">
+
+
+    <div class="container-card">
+      <ion-card class="card">
+        <ion-card-content>
+
+         
+
+
+          <div *ngIf="accept">
+            <h1 style="margin-top: 10px;" class="title">Kiosk 1</h1>
+            <p class="sub">Offenbacher Landstrasse 130</p>
+
+         
+
+            <h1 style="margin-top: 120px;" class="title">Client</h1>
+            <p style="margin-bottom: 20px;" class="sub">Hühnerweg 16</p>
+
+            <ion-button (click)="showClient()" class="btn">Accept Delivery</ion-button>
+          </div>
+
+
+
+          <div *ngIf="client">
+            <h1 style="margin-top: 20px;" class="title">Client</h1>
+            <p style="margin-bottom: 20px;" class="sub">Hühnerweg 16</p>
+
+            <ion-button [routerLink]="['/chat']" class="btn">Chat</ion-button>
+            <ion-button [routerLink]="['/infos']"  class="btn">Complete Delivery</ion-button>
+          </div>
+
+
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+  
+  </div>
+
+</ion-content>

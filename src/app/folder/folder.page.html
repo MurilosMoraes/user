@@ -1,21 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div class="header">
+    <ion-icon [routerLink]="['../../login']" class="back" name="chevron-back-outline"></ion-icon>
+    <ion-icon *ngIf="infos" [routerLink]="['../../chat']" class="msg" name="mail-outline"></ion-icon>
+    <img class="logo" src="../../assets/logo-preto.png">
+    <ion-menu-button class="menu"></ion-menu-button>
+  </div>
+  <div class="container-map">
+    <img class="map" src="../../assets/map-home.png">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="container-card">
+      <ion-card class="card">
+        <ion-card-content>
+
+
+          <div *ngIf="start">
+            <ion-button (click)="changeStart()" class="btn">Start</ion-button>
+          </div>
+
+
+          <div *ngIf="stop">
+            <ion-button (click)="changeStop()" class="btn">To Stop</ion-button>
+          </div>
+
+
+          <div *ngIf="infos">
+            <h1 style="margin-top: 10px;" class="title">Kiosk 1</h1>
+            <p class="sub">Offenbacher Landstrasse 130</p>
+
+            <h1 style="margin-top: 30px;" class="title">Kiosk 2</h1>
+            <p class="sub">Offenbacher Landstrasse 130</p>
+
+            <h1 style="margin-top: 80px;" class="title">Client</h1>
+            <p style="margin-bottom: 20px;" class="sub">Hühnerweg 16</p>
+
+            <ion-button [routerLink]="['../../products']" class="btn">Accept Delivery</ion-button>
+          </div>
+
+
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
 </ion-content>

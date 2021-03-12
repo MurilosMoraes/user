@@ -1,0 +1,46 @@
+<ion-content>
+  <div>
+    <img class="otp" src="../../assets/otp.png" alt="">
+  </div>
+  <div>
+    <h1 class="title">
+      OTP Verification
+    </h1>
+    <p class="sub">
+      Please enter the verification code that was sent to your cell phone
+    </p>
+  </div>
+
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+        </ion-col>
+        <ion-col size="2">
+          <ion-input maxlength="1" class="input"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input maxlength="1" class="input"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input maxlength="1" class="input"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input maxlength="1" class="input"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div>
+    <h1 class="resend">
+      send OTP again
+    </h1>
+  </div>
+
+  <div>
+    <ion-button style="margin-bottom: 30px;" [routerLink]="['../password']" class="btn">Fortsetzen</ion-button>
+  </div>
+</ion-content>

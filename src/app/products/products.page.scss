@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ion-content {
+  --background: #fff;
+}
+
+.back {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  color: #2D0C57;
+  font-size: 22px;
+}
+
+.cart {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  color: #2D0C57;
+  font-size: 24px;
+}
+
+.header {
+  position: relative;
+}
+
+.logo {
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 35%;
+}
+
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: #000;
+  font-size: 30px;
+}
+
+.container-picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picker {
+  margin-top: 20px;
+}
+
+.container-number {
+  position: absolute;
+  right: 32px;
+  top: 10px;
+  width: 30px;
+  text-align: center;
+  background-color: red;
+  border-radius: 100%;
+  padding: 2px;
+}
+
+.number {
+  color: #fff;
+  font-weight: 300;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.sub {
+  font-size: 16px;
+  color: #858585;
+}
+
+.line {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.img-product {
+  width: 100px;
+  object-fit: cover;
+}
+
+.title-product {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #111111;
+
+}
+
+.btn-remove {
+  height: 40px;
+  margin-top: 15px;
+  --background: #ff0c0c;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.desc {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #858585;
+  margin-top: 45px;
+}
+
+.container-products {
+  margin-top: 20px;
+}
+
+.btn-with {
+  height: 55px;
+  margin-top: 30px;
+  --background: #ffd421;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.btn-cancel {
+  height: 55px;
+  margin-top: 15px;
+  --background: #ff0c0c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.card-question {
+  margin-top: 30px;
+  width: 90%;
+  margin-left: 5%;
+  padding: 30px;
+}
+
+.title-card {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+
+}
+
+.sub-card {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #303030;
+  text-align: center;
+
+}
+
+.btn-yes {
+  width: 100px;
+  --background: #ffd421;
+  color: #000;
+  margin: 5px;
+}
+
+.btn-no {
+  width: 100px;
+  --background: #ff0c0c;
+  color: #fff;
+  margin: 5px;
+}
+
+.flex {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

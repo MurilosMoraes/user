@@ -1,0 +1,66 @@
+<ion-content>
+
+  <div class="header">
+    <ion-icon class="back" name="chevron-back-outline"></ion-icon>
+    <img class="logo" src="../../assets/logo-preto.png">
+  </div>
+
+  <div>
+    <h1 class="title">
+      Bestätigen Ihren Alter.
+    </h1>
+  </div>
+
+  <div>
+    <ion-input class="input-id" placeholder="German ID Number">
+      <div class="btn">
+        >
+      </div>
+    </ion-input>
+  </div>
+
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1"></ion-col>
+        <ion-col size="5">
+          <img class="img-id" src="../../assets/id.png" alt="">
+        </ion-col>
+        <ion-col size="5">
+          <p class="txt-id">
+            Give your ID <br> ID number.
+          </p>
+        </ion-col>
+        <ion-col size="1"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div>
+    <select class="select">
+      <!-- <option value="deutsch"> Deutsch</option>
+      <option value="english">English</option>
+      <option value="français">Français</option>
+      <option value="portugues">Português</option>
+      <option value="poslki">Polski</option>
+      <option value="italiano">Italiano</option> -->
+    </select>
+  </div>
+
+  <div>
+    <p class="aviso">
+      Over 18 years of age with a document must be present upon receipt of the product.
+    </p>
+  </div>
+
+
+  <div>
+    <p class="dec">
+      schrit 1
+    </p>
+  </div>
+
+  <div>
+    <ion-button [routerLink]="['../login']" class="cta">Confirm</ion-button>
+  </div>
+</ion-content>
